@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -12,7 +12,6 @@ import Courses from './pages/Courses';
 import Admission from './pages/Admission';
 import ContactUs from './pages/Contact';
 import Apply from './pages/Apply';
-
 import Academics from './pages/Academics';
 import Activities from './pages/Activities';
 import Gallery from './pages/Gallery';
@@ -21,7 +20,7 @@ import NIRF from './pages/NIRF';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -35,11 +34,11 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/academics" element={<Academics />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/Media" element={<Media />} />
-        <Route path="/NIRF" element={<NIRF/>} />
+        <Route path="/media" element={<Media />} />
+        <Route path="/nirf" element={<NIRF />} />
       </Routes>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 
