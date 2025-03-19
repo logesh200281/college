@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const courses = [
   {
-    code: 'TAM101',
-    name: 'B.A Tamil Literature',
-    department: 'Tamil',
-    program: 'UG',
-    duration: '3 Years',
+    code: "TAM101",
+    name: "B.A Tamil Literature",
+    department: "Tamil",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 45000,
       hostel: 18000,
@@ -15,11 +16,11 @@ const courses = [
     },
   },
   {
-    code: 'ENG101',
-    name: 'B.A English Literature',
-    department: 'English',
-    program: 'UG',
-    duration: '3 Years',
+    code: "ENG101",
+    name: "B.A English Literature",
+    department: "English",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 40000,
       hostel: 15000,
@@ -28,11 +29,11 @@ const courses = [
     },
   },
   {
-    code: 'SAN101',
-    name: 'Sanskrit Language and Literature',
-    department: 'Sanskrit',
-    program: 'UG',
-    duration: '3 Years',
+    code: "SAN101",
+    name: "Sanskrit Language and Literature",
+    department: "Sanskrit",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 42000,
       hostel: 16000,
@@ -41,11 +42,11 @@ const courses = [
     },
   },
   {
-    code: 'MAT101',
-    name: 'B.Sc Mathematics',
-    department: 'Mathematics',
-    program: 'UG',
-    duration: '3 Years',
+    code: "MAT101",
+    name: "B.Sc Mathematics",
+    department: "Mathematics",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 50000,
       hostel: 20000,
@@ -54,11 +55,11 @@ const courses = [
     },
   },
   {
-    code: 'BA101',
-    name: 'Bachular Business Administration',
-    department: 'Business Administration',
-    program: 'UG',
-    duration: '3 Years',
+    code: "BA101",
+    name: "Bachelor of Business Administration",
+    department: "Business Administration",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 55000,
       hostel: 22000,
@@ -67,11 +68,11 @@ const courses = [
     },
   },
   {
-    code: 'CS101',
-    name: 'B.Sc Computer Science',
-    department: 'Computer Science',
-    program: 'UG',
-    duration: '3 Years',
+    code: "CS101",
+    name: "B.Sc Computer Science",
+    department: "Computer Science",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 60000,
       hostel: 25000,
@@ -80,11 +81,11 @@ const courses = [
     },
   },
   {
-    code: 'CA101',
-    name: 'BCA',
-    department: 'Computer Applications',
-    program: 'UG',
-    duration: '3 Years',
+    code: "CA101",
+    name: "BCA",
+    department: "Computer Applications",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 55000,
       hostel: 23000,
@@ -93,11 +94,11 @@ const courses = [
     },
   },
   {
-    code: 'PHY101',
-    name: 'B.Sc Physics',
-    department: 'Physics',
-    program: 'UG',
-    duration: '4 Years',
+    code: "PHY101",
+    name: "B.Sc Physics",
+    department: "Physics",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 65000,
       hostel: 27000,
@@ -106,11 +107,11 @@ const courses = [
     },
   },
   {
-    code: 'BT101',
-    name: 'B.Sc Biotechnology',
-    department: 'Bio-Tech',
-    program: 'UG',
-    duration: '3 Years',
+    code: "BT101",
+    name: "B.Sc Biotechnology",
+    department: "Bio-Tech",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 70000,
       hostel: 28000,
@@ -119,11 +120,11 @@ const courses = [
     },
   },
   {
-    code: 'BC101',
-    name: 'B.Sc Bio-Chemistry',
-    department: 'Bio-Chemistry',
-    program: 'UG',
-    duration: '3 Years',
+    code: "BC101",
+    name: "B.Sc Bio-Chemistry",
+    department: "Bio-Chemistry",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 60000,
       hostel: 25000,
@@ -132,11 +133,11 @@ const courses = [
     },
   },
   {
-    code: 'MB101',
-    name: 'B.Sc Microbiology',
-    department: 'Micro Biology',
-    program: 'UG',
-    duration: '3 Years',
+    code: "MB101",
+    name: "B.Sc Microbiology",
+    department: "Microbiology",
+    program: "UG",
+    duration: "3 Years",
     fees: {
       tuition: 62000,
       hostel: 26000,
@@ -145,11 +146,11 @@ const courses = [
     },
   },
   {
-    code: 'CS201',
-    name: 'M.Sc Computer Science',
-    department: 'Computer Science',
-    program: 'PG',
-    duration: '2 Years',
+    code: "CS201",
+    name: "M.Sc Computer Science",
+    department: "Computer Science",
+    program: "PG",
+    duration: "2 Years",
     fees: {
       tuition: 75000,
       hostel: 30000,
@@ -158,11 +159,11 @@ const courses = [
     },
   },
   {
-    code: 'BA201',
-    name: 'Mastrate Business Administration (MBA)',
-    department: 'Business Administration',
-    program: 'PG',
-    duration: '2 Years',
+    code: "BA201",
+    name: "Master of Business Administration (MBA)",
+    department: "Business Administration",
+    program: "PG",
+    duration: "2 Years",
     fees: {
       tuition: 80000,
       hostel: 32000,
@@ -171,11 +172,11 @@ const courses = [
     },
   },
   {
-    code: 'PHY201',
-    name: 'M.Sc Physics',
-    department: 'Physics',
-    program: 'PG',
-    duration: '2 Years',
+    code: "PHY201",
+    name: "M.Sc Physics",
+    department: "Physics",
+    program: "PG",
+    duration: "2 Years",
     fees: {
       tuition: 70000,
       hostel: 30000,
@@ -184,11 +185,11 @@ const courses = [
     },
   },
   {
-    code: 'BT201',
-    name: 'M.Sc Biotechnology',
-    department: 'Bio-Tech',
-    program: 'PG',
-    duration: '2 Years',
+    code: "BT201",
+    name: "M.Sc Biotechnology",
+    department: "Bio-Tech",
+    program: "PG",
+    duration: "2 Years",
     fees: {
       tuition: 80000,
       hostel: 32000,
@@ -197,11 +198,11 @@ const courses = [
     },
   },
   {
-    code: 'CS301',
-    name: 'Ph.D. in Computer Science',
-    department: 'Computer Science',
-    program: 'Ph.D.',
-    duration: '3 Years',
+    code: "CS301",
+    name: "Ph.D. in Computer Science",
+    department: "Computer Science",
+    program: "Ph.D.",
+    duration: "3 Years",
     fees: {
       tuition: 90000,
       hostel: 35000,
@@ -210,11 +211,11 @@ const courses = [
     },
   },
   {
-    code: 'BA301',
-    name: 'Ph.D. in Business Administration',
-    department: 'Business Administration',
-    program: 'Ph.D.',
-    duration: '3 Years',
+    code: "BA301",
+    name: "Ph.D. in Business Administration",
+    department: "Business Administration",
+    program: "Ph.D.",
+    duration: "3 Years",
     fees: {
       tuition: 95000,
       hostel: 36000,
@@ -240,20 +241,19 @@ function App() {
               <h2 className="text-2xl font-semibold text-[#5e35b1] mb-4">
                 {course.name} ({course.code})
               </h2>
-              <p className="text-gray-700 mb-2">
+              <p className="text-gray-700">
                 <span className="font-semibold text-[#5e35b1]">Department:</span> {course.department}
               </p>
-              <p className="text-gray-700 mb-2">
+              <p className="text-gray-700">
                 <span className="font-semibold text-[#5e35b1]">Program:</span> {course.program}
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700">
                 <span className="font-semibold text-[#5e35b1]">Duration:</span> {course.duration}
               </p>
 
               <div className="mt-4 border-t-2 border-[#f3e5f5] pt-4">
-                <h3 className="text-xl font-semibold text-[#5e35b1] mb-4">Fee Structure</h3>
-                <div className="space-y-3">
-                  <p className="text-gray-700">
+                <h3 className="text-xl font-semibold text-[#5e35b1]">Fee Structure</h3>
+                <p className="text-gray-700">
                     <span className="font-semibold text-[#5e35b1]">Tuition Fees:</span> ₹{course.fees.tuition}
                   </p>
                   <p className="text-gray-700">
@@ -262,10 +262,15 @@ function App() {
                   <p className="text-gray-700">
                     <span className="font-semibold text-[#5e35b1]">Library Fees:</span> ₹{course.fees.library}
                   </p>
-                  <p className="text-gray-700 font-bold text-lg">
-                    <span className="font-semibold text-[#5e35b1]">Total Fees:</span> ₹{course.fees.total}
-                  </p>
-                </div>
+                <p className="text-gray-700 font-bold text-lg">
+                  <span className="font-semibold text-[#5e35b1]">Total Fees:</span> ₹{course.fees.total}
+                </p>
+              </div>
+
+              <div className="mt-6 text-center">
+                <Link to="/apply" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                  Apply Now
+                </Link>
               </div>
             </div>
           ))}

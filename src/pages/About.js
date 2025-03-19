@@ -19,21 +19,27 @@ function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Vision Section */}
+          {/* Goals Section */}
           <div className="bg-white shadow-xl rounded-lg p-8 md:p-12 mb-10 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">Vision</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              To be a premier institution of higher learning, committed to academic excellence, research, and producing leaders who contribute meaningfully to society and the nation.
-            </p>
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4">Goals</h2>
+            <ul className="text-lg text-gray-700 space-y-4 leading-relaxed">
+              <li>- Maintaining High Academic Standards</li>
+              <li>- Educating the students from rural, agricultural and weaving Community by giving preference to them.</li>
+              <li>- Keeping pace with knowledge era and gearing up all activities to match the demands of the scientific and technological world.</li>
+              <li>- Enhancing the mindset towards research and creation of New Knowledge.</li>
+              <li>- Making every student of the college Skilled and Employable.</li>
+            </ul>
           </div>
 
           {/* Mission Section */}
           <div className="bg-white shadow-xl rounded-lg p-8 md:p-12 mb-10 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">Mission</h2>
             <ul className="text-lg text-gray-700 space-y-4 leading-relaxed">
-              <li>- To provide a world-class education that is both innovative and comprehensive.</li>
-              <li>- To foster a spirit of inquiry, critical thinking, and research.</li>
-              <li>- To instill leadership qualities, moral values, and social responsibility in students.</li>
+              <li>- Imparting holistic and man making education with an emphasis on Character, Culture and Values.</li>
+              <li>- Designing the Curriculum that transform the students into value added and skilled human resources.</li>
+              <li>- Constantly upgrading academic and management practices towards total quality management and promotion of quality in all spheres.</li>
+              <li>- Extending the best student support services by evolving a curriculum relevant to student community and the society at large.</li>
+              <li>- Molding the teachers in such a way that they biecane the role models in promoting Higher Education.</li>
             </ul>
           </div>
         </div>
@@ -59,7 +65,7 @@ function About() {
             <strong>Phone:</strong> +91 123 456 7890
           </p>
           <p className="text-lg text-gray-700">
-            <strong>Email:</strong> <a href="mailto:info@srisankara.ac.in" className="text-blue-600 hover:underline">info@srisankara.ac.in</a>
+            <strong>Email:</strong> <a href="mailto:info@srisankara.ac.in" className="text-blue-600 hover:underline">admin@srisankaracollege.edu.in</a>
           </p>
         </div>
       </div>

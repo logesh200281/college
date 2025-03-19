@@ -1,18 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}"
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        GoogleSans: "'Google Sans', sans-serif",
-        Poppins: "'Poppins', sans-serif"
-      }
-    },
+    extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('tailwind-scrollbar-hide')
+    require("tailwind-scrollbar-hide"), // Add this plugin to hide the scrollbar
   ],
-}
+};
