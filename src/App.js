@@ -32,6 +32,7 @@ import Sanskrit from "./components/Department/Sanskrit";
 import Tamil from "./components/Department/Tamil";
 import IQAC from "./components/Department/IQAC";
 import Library from "./components/Department/Library";
+import AdminPanel from "./pages/admin/AdminPanel";
 
 function App() {
   return (
@@ -53,7 +54,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/media" element={<Media />} />
           <Route path="/nirf" element={<NIRF />} />
-
+          <Route path="/admin" element={<AdminPanel />} />
           {/* Department Routes - Fixed Paths */}
           <Route path="/department/biochemistry" element={<Biochemistry />} />
           <Route path="/department/biotechnology" element={<Biotechnology />} />
